@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MX</title>
+<style>
+body{
+  background-color:#000000;
+}
+.wrapper{
+  background-color:transparent;
+  position:absolute;
+  height:500px;
+  width:840px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.verde{
+  height:500px;
+  width:280px;
+  background-color:#006847;
+  position:absolute;
+  top:0;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+}
+.blanco{
+  height:500px;
+  width:280px;
+  background-color:white;
+  background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/245px-Coat_of_arms_of_Mexico.svg.png") center no-repeat white;
+  background-size:80%;
+  position:absolute;
+  top:0;
+  left:280px;
+}
+.rojo{
+  height:500px;
+  width:280px;
+  background-color:#CE1126;
+  position:absolute;
+  top:0;
+  left:560px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
+@media screen and (max-width: 840px){
+  .wrapper{
+    transform:translate(-50%,-50%) scale(0.8,0.8);
+  }
+}
+@media screen and (max-width: 672px){
+  .wrapper{
+    transform:translate(-50%,-50%) scale(0.6,0.6);
+  }
+}
+@media screen and (max-width: 504px){
+  .wrapper{
+    transform:translate(-50%,-50%) scale(0.4,0.4);
+  }
+}
+@media screen and (max-width: 336px){
+  .wrapper{
+    transform:translate(-50%,-50%) scale(0.2,0.2);
+  }
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="wrapper">
+  <div class="verde"></div>
+  <div class="blanco"></div>
+  <div class="rojo"></div>
+</section>
+<!-- partial -->
+  
+</body>
+</html>
